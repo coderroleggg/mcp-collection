@@ -9,6 +9,7 @@
 - [Playwright](https://github.com/microsoft/playwright-mcp)
 - [Supabase](https://supabase.com/docs/guides/getting-started/mcp)
 - [GetStack](https://getstack.coderr.online)
+- [PostgreSQL](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/postgres)
 
 ## Full json config:
 
@@ -74,7 +75,15 @@
           "GITLAB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN>",
           "GITLAB_API_URL": "https://gitlab.com/api/v4" // Optional, for self-hosted instances
         }
+      },
+      "postgres": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-postgres",
+          "postgresql://login:password@host:port/db_name"
+        ]
       }
     }
-  }
+}
 ```
