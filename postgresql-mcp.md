@@ -1,4 +1,4 @@
-# PosreSQL MCP
+# PostgreSQL MCP
 
 Official repository: https://github.com/modelcontextprotocol/servers-archived/tree/main/src/postgres
 
@@ -18,4 +18,4 @@ Config example:
 }
 ```
 
-Replace login, passwor, host, post and db_name with your values
+Replace login, password, host, post and db_name with your values
